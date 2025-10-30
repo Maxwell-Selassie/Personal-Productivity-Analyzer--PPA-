@@ -35,7 +35,7 @@ Use data from your daily digital activities (coding, phone usage, browsing, etc.
 | **Optional Integrations**              | Toggl (for work sessions), Notion API, Fitbit                             | API calls                                                    | Activity logs, heart rate, etc.                                    |
 
 `Step-by-step pipeline`
-🧾 Stage 1: Data Collection
+- 🧾 `Stage 1: Data Collection`
 
 Script runs daily (or manual input)
 
@@ -49,7 +49,7 @@ Each record includes:
 
 Timestamp, activity type, duration, productivity score, category
 
-🧹 Stage 2: Data Cleaning & Preprocessing
+🧹 `Stage 2: Data Cleaning & Preprocessing`
 
 Parse timestamps into datetime objects
 
@@ -65,7 +65,7 @@ distraction_ratio = (unproductive_time / total_time)
 
 sleep_hours or exercise (from manual log)
 
-📈 Stage 3: Exploratory Data Analysis (EDA)
+📈 `Stage 3: Exploratory Data Analysis (EDA)`
 
 Identify:
 
@@ -83,15 +83,13 @@ Line charts (productivity trend over time)
 
 Bar plots (activities contributing to distraction)
 
-🤖 Stage 4: Modeling
+🤖 `Stage 4: Modeling`
 
 Define a focus score (e.g., ratio of productive time / total time)
 
 Predict next-day focus using:
 
 Regression: LinearRegression, RandomForestRegressor
-
-Time series: Prophet or LSTM (optional advanced)
 
 Evaluate:
 
@@ -103,7 +101,7 @@ Output:
 
 “Optimal work hours” recommendation
 
-📊 Stage 5: Visualization / Dashboard
+📊 `Stage 5: Visualization / Dashboard`
 
 Build Streamlit dashboard with:
 
@@ -113,11 +111,11 @@ Time-of-day heatmap
 
 Next-day focus forecast
 
-Personalized recommendations (“Best time to start coding: 9–11 AM”)
+Personalized recommendations (“e.g. Best time to start coding: 9–11 AM”)
 
 Update dashboard daily (auto or manual refresh)
 
-🔁 Stage 6: Feedback Loop
+🔁 `Stage 6: Feedback Loop`
 
 Record daily performance against prediction
 
